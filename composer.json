@@ -1,0 +1,24 @@
+{
+    "name": "djaxho/laravel-cats",
+    "description": "Make programming fun again by printing cats when debugging and dumping data",
+    "type": "library",
+    "keywords": ["laravel", "cats", "debug", "super-cool-feline-friends", "fun"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Danny Jackson",
+            "email": "djaxho@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^5.6.0",
+        "php": "^7.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
