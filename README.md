@@ -12,7 +12,7 @@ It works in the browser and console (tinker, artisan commands, unit tests).
 > (__ __)//              
 > ```
 
-Intended to be comical in the beginning, but has proven itself to be a tool used fairly often for drawing the eye to breaks, or data dumps in views when you aren't sure where dumped data will really end up on a page. Or when your terminal is filled with output and you want to know exactly where your dump ended up id it isn't the final item printed to the console. A big 'ol cat lets your eyes find the target immediately.
+Intended to be comical in the beginning, but has proven itself to be a tool used fairly often for drawing the eye to breaks, or data dumps in views when you aren't sure where dumped data will really end up on a page. Or when your terminal is filled with output and you want to know exactly where your dump ended up if it isn't the final item printed to the console. A big 'ol cat lets your eyes find the target immediately.
 
 ## Installation
 
