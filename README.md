@@ -12,7 +12,7 @@ It works in the browser and console (tinker, artisan commands, unit tests).
 > (__ __)//              
 > ```
 
-Intended to be comical in the beginning, but has proven itself to be a tool used fairly often for drawing the eye to breaks, or data dumps in views when you aren't sure where dumped data will really end up on a page. Or when your terminal is filled with output and you want to know exactly where your dump ended up if it isn't the final item printed to the console. A big 'ol cat lets your eyes find the target immediately.
+Intended to be comical in the beginning, but has proven itself to be a tool used fairly often for drawing the eye to breaks, or data dumps in views or command line when you aren't sure where dumped data will really end up on a page. Or when your terminal is filled with output and you want to know exactly where your dump ended up if it isn't the final item printed to the console. A big 'ol cat lets your eyes find the target immediately.
 
 ## Installation
 
@@ -22,11 +22,11 @@ Require this package with composer. It is recommended to only require the packag
 composer require djaxho/laravel-cats --dev
 ```
 
-## Usage
+## Usage (provides 2 functions)
 
 ```php
 cc($args); // exactly the same as doing dd($args) in laravel, but adds an ascii cat
-c($args); // exactly the same as doing dd($args) in laravel, but adds an ascii cat
+c($args); // exactly the same as doing dump($args) in laravel, but adds an ascii cat
 ```
 
 ## Motivation
