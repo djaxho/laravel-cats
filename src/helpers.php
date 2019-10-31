@@ -1,15 +1,7 @@
 <?php
 
-if (! function_exists('c')) {
-
-    /**
-     * Helper to print some cats and dump data
-     *
-     * @return mixed
-     */
-    function c()
-    {
-        $cats = [];
+function printCat() {
+  $cats = [];
 
         $cats[] = <<<EOD
 
@@ -50,8 +42,22 @@ EOD;
         echo (app()->runningInConsole() ? '' : '<pre>')
           . $cats[array_rand($cats)]
           . (app()->runningInConsole() ? '' : '</pre>');
+
+}
+
+
+if (! function_exists('c')) {
+
+    /**
+     * Helper to print some cats and dump data
+     *
+     * @return mixed
+     */
+    function c()
+    {
         
-        dump(...func_get_args());
+      printCat();
+      dump(...func_get_args());
     }
 }
 
@@ -66,5 +72,19 @@ if (! function_exists('cc')) {
     {
         c(...func_get_args());
         die(1);
+    }
+}
+
+if (!function_exists('ccc') && function_exists('ddd')) {
+
+    /**
+     * Helper to print some cats, dump data and die
+     *
+     * @return mixed
+     */
+    function ccc()
+    {
+      printCat();
+      ddd(...func_get_args());
     }
 }
